@@ -11,7 +11,6 @@ Model Context Protocol (MCP)を使用したSlack botをTypeScriptで実装して
 - **🔧 MCP連携**: ファイルシステム、Web、Miroなどの多様なMCPツールへのフルアクセス
 - **🔀 マルチLLMサポート**: OpenAI、Groq、Anthropicの各種モデルに対応
 - **🏠 App Homeタブ**: 利用可能なツールと使用方法情報を表示
-- **🌐 日本語サポート**: デフォルトで日本語でのやり取りが可能
 - **📁 リソース管理**: 独自の非同期リソース管理システムによる安定した動作
 
 ## 🚀 クイックスタート
@@ -137,8 +136,8 @@ mcp-client-slack/
 │   └── servers_config.json   # MCPサーバー設定
 ├── dist/                     # コンパイル済みJavaScriptファイル
 ├── scripts/                  # ビルド・実行スクリプト
-│   ├── build.sh             # ビルドスクリプト
-│   └── run.sh               # 実行スクリプト
+│   ├── build.sh              # ビルドスクリプト
+│   └── run.sh                # 実行スクリプト
 ├── slack/                    # Slack関連設定ファイル
 │   ├── manifest.yaml         # Slackアプリマニフェスト
 │   └── INSTALLATION.md       # Slackアプリインストール手順
@@ -165,7 +164,7 @@ mcp-client-slack/
 │       ├── messageAgent.ts
 │       ├── placeToTalk.ts
 │       └── talkCollection.ts
-├── .env.example              # 環境変数テンプレート
+├── .env.example             # 環境変数テンプレート
 ├── .eslintrc.json           # ESLint設定
 ├── .gitignore               # Git無視ファイル設定
 ├── .prettierrc              # Prettier設定
@@ -213,10 +212,6 @@ mcp-client-slack/
 5. ツール呼び出しがある場合は`MCPClient`を通じてツールを実行
 6. 実行結果をLLMに送り返して解釈を求める
 7. 最終的なレスポンスをSlackに返送
-
-## 🔧 開発
-
-詳細な開発者向け情報は[DEVELOPMENT.md](DEVELOPMENT.md)を参照してください。
 
 ### 開発環境のセットアップ
 
@@ -276,4 +271,4 @@ MITライセンス - 詳細は[LICENSE](LICENSE)ファイルを参照してく�
 3. Slackアプリの権限が正しく設定されているか確認
 4. MCPサーバーの設定が正しいか確認
 
-詳細な設定方法については、`slack/INSTALLATION.md`と`DEVELOPMENT.md`を参照してください。
+詳細な設定方法については、`slack/INSTALLATION.md`を参照してください。

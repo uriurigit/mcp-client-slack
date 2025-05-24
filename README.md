@@ -9,7 +9,7 @@ Model Context Protocol (MCP)を使用したSlack botをTypeScriptで実装して
 
 - **🤖 AI搭載アシスタント**: チャンネルやDMでのメッセージに応答するLLM機能
 - **🔧 MCP連携**: ファイルシステム、Web、Miroなどの多様なMCPツールへのフルアクセス
-- **🔀 マルチLLMサポート**: OpenAI、Groq、Anthropicの各種モデルに対応
+- **🔀 LLMサポート**: 現在はAnthropicのみ対応
 - **🏠 App Homeタブ**: 利用可能なツールと使用方法情報を表示
 - **📁 リソース管理**: 独自の非同期リソース管理システムによる安定した動作
 

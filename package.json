@@ -1,0 +1,32 @@
+{
+  "name": "mcp-client-slackbot-ts",
+  "version": "1.0.0",
+  "description": "A Slack bot using TypeScript with LLM integration",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "start": "node --env-file=.env dist/index.js",
+    "dev": "node --env-file=.env -r ts-node/register src/index.ts",
+    "lint": "eslint src/",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.50.3",
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "@slack/bolt": "^3.17.0",
+    "@slack/web-api": "^7.0.2",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "author": "",
+  "license": "MIT"
+}
